@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="save.css">
+</head>
+<body>
+    <div class="form">
+    <h2>My Registration Form</h2>
+    <form method="post">
+
+    <label for="fname" class="gen">First Name</label><br>
+    <input type="text" class="input" name="" id="fname" placeholder="Your Name.." value="Oluwadarasimi"><br><br>
+
+    <label for="lname" class="gen">Last Name</label><br>
+    <input type="text" class="input" name="" id="lname" placeholder="Your Last Name.." value="Oluwunmi"><br><br>
+
+    <label for="email" class="gen">Email</label><br>
+    <input type="text" class="input" name="" id="email" placeholder="Your Email.." value="dara.oluwunmi.co.uk@gmail.com"><br><br>
+
+
+    <label for="country" class="gen">Country</label><br>
+    <select id="country" name="country">
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="USA" selected>USA</option>
+    </select><br><br>
+
+
+    <label for="Gender" class="gen">Gender:</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="male">Female</label>
+    <input type="radio" name="gender" id="other" value="other" checked>
+    <label for="male">Other</label><br><br>
+
+
+    <label for="Hobbies" class="gen">Hobbies<i>(optional)</i></label><br>
+    <label for="Sports"><input type="checkbox" name="hobbies[]" id="sports" value="sports"  checked>Sports</label>
+    <label for="Sports"><input type="checkbox" name="hobbies[]" id="movies" value="music">Movies</label>
+    <label for="Sports"><input type="checkbox" name="hobbies[]" id="music" value="movies" checked>Music</label><br><br>
+
+    <button value="Submit" id="btn">Submit</button>
+
+    </form>
+    </div>
+    <script src="save.js"></script>
+</body>
+</html>
