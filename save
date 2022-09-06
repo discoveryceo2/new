@@ -5,7 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="save.css">
+    <style>
+    * {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.input {
+    width: 300px;
+    height: 25px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    background: transparent;
+}
+
+form {
+    margin-left: 20px;
+}
+
+.form {
+    text-align: left;
+    background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3));
+    width: 50vh;
+    height: 500px;
+    margin-left: 500px;
+    margin-top: 100px;
+    border: none;
+    outline: none;
+    align-items: center;
+}
+
+label {
+    font-size: large;
+}
+
+.gen {
+    margin-left: 20px;
+    font-size: large;
+}
+
+#sports {
+    margin-left: 20px;
+}
+
+select{
+    margin-left: 20px;
+    width: 300px;
+    height: 25px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    background: transparent;
+}
+
+
+option {
+    font-size: large;
+}
+
+option [selected] {
+    font-size: large;
+}
+
+button {
+    background-color: #ff7200;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+    </style>
 </head>
 <body>
     <div class="form">
@@ -48,6 +131,54 @@
 
     </form>
     </div>
-    <script src="save.js"></script>
+    <script type="text/javascript">
+    //Collecting Data
+//How to collect data from text boxes
+let fname = document.getElementById('fname').value;
+console.log(fname);
+
+let lname = document.getElementById('lname').value;
+console.log(lname);
+
+let email = document.getElementById('email').value;
+console.log(email);
+
+//Getting selected value from a dropdown list
+let country = document.querySelector('#country').value;
+console.log(country);
+
+//Getting value of checked radio button
+let gender = document.querySelector('input[name="gender"]:checked').value;
+console.log(gender);
+
+//Selecting all checked Checkboxes
+let hobbies = [];
+let checkboxes = document.getElementsByName('hobbies[]');
+for(let i = 0; i < checkboxes.length; i++) {
+    if(checkboxes[i].checked){
+        hobbies.push(checkboxes[i].value);
+    }
+}
+console.log(hobbies);
+
+//addEventListener method
+/*function displayAlert() {
+    alert('You clicked on submit button')
+}
+
+document.getElementById('btn')
+.addEventListener('click', displayAlert)
+*/
+
+document.getElementById('btn')
+.addEventListener('click', function () {
+    alert('You clicked on submit button');
+})
+
+document.getElementById('email')
+addEventListener('focus', function () {
+    document.getElementById('email').style.background = 'yellow';
+})
+    </script>
 </body>
 </html>
