@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script type="text/javascript">
+        function substitute() {
+            var value = document.getElementById('myTextBox').value;
+            if (value.length == 0) {
+                alert ('Please enter a real value in the text box');
+                return;
+            }
+            var title = document.getElementById('title');
+            title.innerHTML = value;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="title">Javasript Example</h1>
+    <p>
+        <input type="text" id="myTextBox">
+        <input type="submit" value="Click me" onclick="substitute()">
+    </p>
+    <rights>Copyright (c) 2021, Microsoft, Inc.; all rights reserved.</rights>
+    <author>
+        <name>KL OLUWUNMI</name>
+        </author>
+        <updated>2022-08-16T00:00:00.000Z</updated>
+        <form name=myform>
+            <input type=text name=mytext>
+            <input type=button value=save onClick=saving()>
+            </form>
+</body>
+</html>

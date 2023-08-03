@@ -1,0 +1,60 @@
+#animation h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_show .5s ease forwards;
+    animation-delay: 1s;
+}
+#animation h1:nth-child(1){
+    animation-delay: 1s;
+}
+#animation h1:nth-child(2){
+    animation-delay: 2s;
+}
+#animation h1:nth-child(3){
+    animation: text_show_name .5s ease forwards;
+    animation-delay: 3s;
+}
+#animation h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: blue;
+    animation: text_show_box 1s ease;
+    animation-delay: .3s;
+}
+#animation h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#animation h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#animation h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+@keyframes text_show_box{
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+
+}
+@keyframes text_show{
+    100%{
+        color: green;
+    }
+}
+@keyframes text_show_name{
+    100% {
+        color: #ff7200;
+    }
+}

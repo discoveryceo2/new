@@ -1,0 +1,16 @@
+body {
+    font-size: 20px;
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Goldman', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+.Keypoint {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Goldman', cursive;
+}
